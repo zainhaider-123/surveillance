@@ -1,4 +1,4 @@
-import hafsa from "/assets/teachers/unkown.webp"
+import hafsa from "/assets/teachers/female.png"
 import yawar from "/assets/teachers/unkown.webp"
 import shahzad from "/assets/teachers/unkown.webp"
 
