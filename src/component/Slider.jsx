@@ -1,4 +1,3 @@
-import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -7,18 +6,17 @@ import 'swiper/css/pagination';
 
 const Slider = () => {
 
-    const images = [
-        '/assets/image1.jpg',
-        '/assets/image2.jpg',
-        '/assets/image3.jpg',
-        '/assets/image4.jpg'
-    ];
+  const images = [
+    '/assets/project/Hardware.jpg',
+    '/assets/project/pcb.jpg'
+  ];
+
 
 
   return (
 <div className="w-full max-w-5xl mx-auto py-10">
         <Swiper
-          modules={[Pagination, Autoplay]} // Removed Navigation module
+          modules={[Pagination, Autoplay]}
           spaceBetween={30}
           slidesPerView={1}
           loop={true}
