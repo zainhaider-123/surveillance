@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-const Cards = ({ Info, size }) => {
+const Cards = ({ Info, size, showLinkedIn  }) => {
   const colClass = {
     1: 'xl:grid-cols-1',
     2: 'xl:grid-cols-2',
@@ -19,10 +19,10 @@ const Cards = ({ Info, size }) => {
           key={item.id}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: index * 0.1 }}
+          transition={{ duration: 0.2, delay: index * 0.05 }}
           viewport={{ once: true, amount: 0.7 }}
-          whileHover={{ scale: 1.05 }}
-          className="bg-zinc-300 rounded-xl shadow-md p-4 flex flex-col w-fit"
+          whileHover={{ scale: 1.03 }}
+          className="bg-zinc-300 rounded-xl shadow-md p-4 flex flex-col w-full"
         >
           <img
             src={item.image}
@@ -36,15 +36,22 @@ const Cards = ({ Info, size }) => {
                 {item.title}
               </h2>
               <p className="text-center my-3 text-sm text-zinc-700">
+                {item.part}
+              </p>
+              <p className="text-center my-3 text-sm text-zinc-700">
                 {item.detail}
               </p>
             </div>
             <div>
-              <Link to="/" className="block mt-6 text-center">
-                <p className="text-zinc-700 font-bold text-md uppercase hover:underline">
-                  linkedin
-                </p>
-              </Link>
+              {showLinkedIn && (
+                <div>
+                  <Link to="/" className="block mt-6 text-center">
+                    <p className="text-zinc-700 font-bold text-md uppercase hover:underline">
+                      linkedin
+                    </p>
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         </motion.div>

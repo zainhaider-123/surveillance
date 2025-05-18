@@ -1,4 +1,3 @@
-import React from 'react';
 import Slider from './Slider';
 
 const Project = () => {
@@ -6,7 +5,7 @@ const Project = () => {
 
     <div className="container mx-auto mt-10">
       <h3 className='text-3xl text-center font-medium mb-10 uppercase'>project</h3>
-      <p className='text-center'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias rem quia laboriosam nihil hic nobis reiciendis tenetur molestiae, eveniet, ipsa minima eum fugiat, perspiciatis facere dicta deleniti ratione? Deleniti corporis numquam maiores ut eius modi suscipit, autem, optio veritatis consectetur ullam ratione voluptatem hic amet repellat, aspernatur ea voluptates unde. Distinctio possimus doloremque ratione quasi repudiandae, suscipit corporis nesciunt, est eveniet quisquam sapiente aliquid illo nostrum sit unde dolorem dolorum facilis hic nulla esse. Consectetur sunt magnam at quia mollitia iste, sit officia! Incidunt a eum quo iste asperiores odio atque illo maxime odit, ipsa consectetur. Eum dignissimos accusantium facilis.</p>
+      <p className='text-center'>The main objectives of this project are to develop and deploy a UAV-based search and rescue system incorporating advanced AI algorithms and reliable hardware. Specifically, the project aims to collect aerial imagery, sensor data from past disaster scenarios, and datasets of human figures and obstacles. High-quality datasets will enable the AI model to learn to identify survivors in various conditions.</p>
 
       <Slider />
     </div>
